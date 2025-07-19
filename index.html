@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ambulancias Medical Transport Sas®</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="img/logo.png" alt="Logo" />
+      Ambulancias Medical Transport Sas
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="javascript:void(0)" onclick="toggle('info1')">Conócenos</a>
+      <a href="javascript:void(0)" onclick="toggle('info2')">Servicios</a>
+      <a href="javascript:void(0)" onclick="toggle('galeria')">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Donde cada vida importa & cada segundo cuenta</h2>
+  </section>
+
+  <!-- CONÓCENOS -->
+  <section id="conocenos">
+    <h3 onclick="toggle('info1')">Conócenos ▼</h3>
+    <div id="info1" class="content">
+      <p><strong>Misión</strong><br>
+      Brindar transporte médico de emergencia con un nivel de excelencia y humanidad sin igual, garantizando que no importe el lugar ni la condición, cada persona reciba atención médica inmediata. Transformamos cada emergencia en una oportunidad de vida, derribando los muros de desigualdad y llevando la salud a donde más se necesita.</p>
+
+      <p><strong>Visión</strong><br>
+      Ser la fuerza transformadora que redefine el acceso a la salud en el país, construyendo una red de emergencias donde cada vida importa, cada segundo es crucial, y ninguna barrera puede detener nuestra misión de salvar.</p>
+
+      <p><strong>Objetivo Social</strong><br>
+      Crear un cambio radical en el sistema de salud, llevando transporte médico de emergencia a todas las comunidades, especialmente a las más vulnerables, y promoviendo la equidad sanitaria mediante la mejora del acceso a la salud en cada rincón del país, sin distinción alguna.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h3 onclick="toggle('info2')">Servicios ▼</h3>
+    <div id="info2" class="content">
+      <ul>
+        <li>🚑 Traslado asistencial básico</li>
+        <li>🚨 Traslado medicalizado</li>
+        <li>♿ Movilidad reducida</li>
+        <li>🏥 Médico a domicilio</li>
+        <li>🩺 Home Care</li>
+        <li>🎉 Eventos</li>
+        <li>🛡️ Zona protegida</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="galeria">
+    <h3 onclick="toggle('galeria-container')">Galería ▼</h3>
+    <div id="galeria-container" class="galeria-container">
+      <img src="img/img.1.jpeg" alt="Ambulancia 1">
+      <img src="img/img.2.jpeg" alt="Ambulancia 2">
+      <img src="img/img.3.jpeg" alt="Ambulancia 3">
+      <img src="img/img.4.jpeg" alt="Ambulancia 4">
+      <img src="img/img.5.jpeg" alt="Ambulancia 5">
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section">
+    <h2>Campaña de Concientización</h2>
+    <iframe src="https://www.youtube.com/embed/_MNEP0DKLRA?si=QPXAujo9n46S5TEX"
+            title="Concientización" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Dirección:</strong> Cll 44n 2e30 barrio Vipasa, Cali - Valle del Cauca - Colombia</p>
+        <p><strong>Teléfono:</strong> 3042035070</p>
+        <p><strong>Email:</strong> ambulanciasmedicaltransport@gmail.com</p>
+      </div>
+      <form action="https://formspree.io/f/mwkgbgdr" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PUBLICIDAD -->
+  <section class="publicidad">
+    <h3>Espacio para publicidad</h3>
+    <p>Próximamente contenido educativo o promocional aquí</p>
+    <img class="banner-publicidad" src="img/fondo.jpeg" alt="Publicidad">
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Ambulancias Medical Transport Sas®</p>
+    <p>Aceptamos todos los medios de pago</p>
+    <div class="payment-icons">
+      <i class="fab fa-cc-visa"></i>
+      <i class="fab fa-cc-mastercard"></i>
+      <i class="fab fa-cc-amex"></i>
+      <i class="fab fa-cc-paypal"></i>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/573042035070" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      if (el.style.display === 'block') {
+        el.style.display = 'none';
+      } else {
+        // Ocultar otros
+        document.querySelectorAll('.content, .galeria-container').forEach(div => {
+          if (div.id !== id) div.style.display = 'none';
+        });
+        el.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
